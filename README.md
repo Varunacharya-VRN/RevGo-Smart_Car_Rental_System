@@ -70,7 +70,6 @@ Admins can manage cars, users, bookings, and feedbacks.
 
 ## 🖼 Screenshots
 
-> Replace these paths with GitHub raw URLs after uploading images.
 
 ### 🔹 Admin Dashboard
 ![Admin Dashboard](images/screenshot/Admin1.png)
@@ -94,7 +93,7 @@ Admins can manage cars, users, bookings, and feedbacks.
 - XAMPP / WAMP Server  
 - PHP 7+  
 - MySQL Database  
-- Browser (Chrome recommended)  
+- BrowseR  
 
 ---
 
