@@ -1,6 +1,6 @@
-<!-- <p align="center">
-  <img src="https://user-images.githubusercontent.com/80502833/187230764-e1bb2b44-c221-4529-ba73-a2261e636372.png" width="800">
-</p> -->
+<p align="center">
+  <img src="https://github.com/Varunacharya-VRN/RevGo-Smart_Car_Rental_System/blob/023ef4f30f231dc76fd7360ddf2e5f6c7062f838/images/screenshot/Login-page.png" width="800">
+</p>
 
 <h1 align="center">🚗 RevGo – Car Rental Website Project</h1>
 <p align="center">A complete Car Rental System built as a College Mini Project using HTML, CSS, JavaScript, PHP & MySQL.</p>
