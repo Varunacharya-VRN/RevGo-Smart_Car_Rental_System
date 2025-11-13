@@ -149,14 +149,6 @@ Admin can fully control and monitor the rental system.
 
 ---
 
-## 🌐 Demo
-
-Live Demo (Example):
-- https://carsminiproject.000webhostapp.com/  
-
-
----
-
 ## 👨‍💻 Author
 
 **Varun Acharya**  
