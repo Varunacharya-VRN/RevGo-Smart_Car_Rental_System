@@ -1,6 +1,6 @@
-<p align="center">
+<!-- <p align="center">
   <img src="https://user-images.githubusercontent.com/80502833/187230764-e1bb2b44-c221-4529-ba73-a2261e636372.png" width="800">
-</p>
+</p> -->
 
 <h1 align="center">🚗 RevGo – Car Rental Website Project</h1>
 <p align="center">A complete Car Rental System built as a College Mini Project using HTML, CSS, JavaScript, PHP & MySQL.</p>
@@ -73,19 +73,19 @@ Admins can manage cars, users, bookings, and feedbacks.
 > Replace these paths with GitHub raw URLs after uploading images.
 
 ### 🔹 Admin Dashboard
-![Admin Dashboard](assets/screenshots/admin-dashboard.png)
+![Admin Dashboard](images/screenshot/Admin1.png)
 
 ### 🔹 User Home + Login
-![Home Login](assets/screenshots/home-login.png)
+![Home Login](images/screenshot/Login-page.png)
 
 ### 🔹 Registration Page
-![Register](assets/screenshots/register.png)
+![Register](images/screenshot/Register-page.png)
 
 ### 🔹 Car Listing (Premium Fleet)
-![Car Listing](assets/screenshots/car-listing.png)
+![Car Listing](images/screenshot/Home-page.png)
 
 ### 🔹 Booking Page
-![Booking](assets/screenshots/booking.png)
+![Booking](images/screenshot/Booking-page.png)
 
 ---
 
