@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>RevGo | About Us</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <style>
+            * {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+            
+            body {
+                font-family: 'Poppins', sans-serif;
+                background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/jamie-street.jpg");
+                background-position: center;
+                background-size: cover;
+                background-attachment: fixed;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                color: #fff;
+            }
+            
+            .about-container {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 80px 20px 40px;
+            }
+            
+            .about-card {
+                display: flex;
+                max-width: 1200px;
+                background: rgba(18, 25, 44, 0.8);
+                backdrop-filter: blur(10px);
+                border-radius: 20px;
+                overflow: hidden;
+                box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+            }
+            
+            .about-image {
+                flex: 1;
+                padding: 3rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .about-image img {
+                max-width: 100%;
+                border-radius: 10px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+                transition: transform 0.5s ease;
+            }
+            
+            .about-image img:hover {
+                transform: scale(1.05);
+            }
+            
+            .about-content {
+                flex: 1;
+                padding: 3rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            
+            .about-content h1 {
+                font-size: 3rem;
+                margin-bottom: 1.5rem;
+                position: relative;
+                display: inline-block;
+                background: linear-gradient(90deg, #f97316, #3b82f6);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: 1px;
+            }
+            
+            .about-content p {
+                margin-bottom: 2rem;
+                line-height: 1.8;
+                font-size: 1.1rem;
+                color: rgba(255, 255, 255, 0.9);
+            }
+            
+            .about-links {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem;
+                margin-bottom: 2rem;
+            }
+            
+            .about-links a {
+                display: inline-block;
+                padding: 0.8rem 1.5rem;
+                background: rgba(65, 88, 208, 0.2);
+                color: #fff;
+                text-decoration: none;
+                border-radius: 30px;
+                border: 1px solid #4158D0;
+                transition: all 0.3s ease;
+                font-weight: 500;
+            }
+            
+            .about-links a:hover {
+                background: linear-gradient(90deg, #f97316, #3b82f6);
+                transform: translateY(-3px);
+                box-shadow: 0 5px 15px rgba(249, 115, 22, 0.4);
+            }
+            
+            .social-links {
+                display: flex;
+                gap: 1rem;
+            }
+            
+            .social-links a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 50%;
+                color: #fff;
+                transition: all 0.3s ease;
+            }
+            
+            .social-links a:hover {
+                background: linear-gradient(90deg, #f97316, #3b82f6);
+                transform: translateY(-3px);
+                box-shadow: 0 5px 15px rgba(249, 115, 22, 0.4);
+            }
+            
+            @media (max-width: 900px) {
+                .about-card {
+                    flex-direction: column;
+                }
+                
+                .about-image, .about-content {
+                    padding: 2rem;
+                }
+                
+                .about-content h1 {
+                    font-size: 2rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="container">
+                <a href="index.php" class="logo">RevGo</a>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.php"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="aboutus.html" class="active"><i class="fas fa-info-circle"></i> About</a></li>
+                        <li><a href="contactus.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                        <li><a href="adminlogin.php" class="adminbtn">Admin Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="about-container">
+            <div class="about-card">
+                <div class="about-content">
+                    <h1>About Us</h1>
+                    <p>Welcome to RevGo, where passion for automobiles meets exceptional service. We started this company to make people's dreams come true and help them enjoy life to its full potential through unforgettable driving experiences.</p>
+                    <p>Our fleet of premium vehicles and dedicated team of professionals ensure that every journey with us is memorable and comfortable. We take pride in our commitment to quality, safety, and customer satisfaction.</p>
+                    <p>At RevGo, we believe that everyone deserves to experience the thrill of driving a premium vehicle. Whether you're traveling for business or pleasure, our diverse selection of vehicles will meet your needs and exceed your expectations.</p>
+                    
+                    <div class="about-links">
+                        <a href="index.php"><i class="fas fa-home"></i> Home</a>
+                        <a href="#"><i class="fas fa-car"></i> Services</a>
+                        <a href="contactus.html"><i class="fas fa-envelope"></i> Contact</a>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Add scroll effect to navbar
+            window.addEventListener('scroll', function() {
+                const navbar = document.querySelector('.navbar');
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+            
+            // Mobile menu toggle
+            const menuToggle = document.querySelector('.menu-toggle');
+            const menu = document.querySelector('.menu');
+            
+            if (menuToggle) {
+                menuToggle.addEventListener('click', function() {
+                    menu.classList.toggle('active');
+                    this.classList.toggle('active');
+                });
+            }
+        </script>
+    </body>
+</html>

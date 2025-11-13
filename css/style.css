@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary: #2563eb;
+    --primary-light: #3b82f6;
+    --primary-dark: #1d4ed8;
+    --secondary: #f97316;
+    --text-dark: #1e293b;
+    --text-light: #64748b;
+    --bg-light: #f8fafc;
+    --bg-dark: #0f172a;
+    --white: #ffffff;
+    --transition: all 0.3s ease;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --border-radius: 8px;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* Background styles */
+.hai, .main {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url("../images/carbg2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Navbar styles */
+.navbar {
+    max-width: 1200px;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    color: var(--secondary);
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    margin: 0 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: var(--transition);
+    padding: 10px 0;
+    position: relative;
+}
+
+ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: var(--secondary);
+    bottom: 0;
+    left: 0;
+    transition: var(--transition);
+}
+
+ul li a:hover::after {
+    width: 100%;
+}
+
+ul li a:hover {
+    color: var(--secondary);
+}
+
+/* Admin button */
+.adminbtn {
+    background-color: transparent;
+    border: 2px solid var(--secondary);
+    color: var(--white);
+    padding: 8px 16px;
+    border-radius: var(--border-radius);
+    font-size: 15px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.adminbtn:hover {
+    background-color: var(--secondary);
+}
+
+.adminbtn a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500;
+}
+
+/* Content styles */
+.content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 20px 0;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content .text-section {
+    width: 50%;
+}
+
+.content h1 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.content span {
+    color: var(--secondary);
+}
+
+.content .par {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.content .cn {
+    background-color: var(--secondary);
+    color: var(--white);
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+    display: inline-block;
+    box-shadow: var(--shadow);
+}
+
+.content .cn:hover {
+    background-color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.content .cn a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* Form styles */
+.form {
+    width: 380px;
+    background-color: rgba(255, 255, 255, 0.92);
+    border-radius: var(--border-radius);
+    padding: 40px;
+    box-shadow: var(--shadow-md);
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form h2 {
+    font-size: 24px;
+    text-align: center;
+    color: var(--text-dark);
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.form input {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    background: var(--white);
+    border: 1px solid #e2e8f0;
+    border-radius: var(--border-radius);
+    padding: 0 15px;
+    font-size: 16px;
+    color: var(--text-dark);
+    transition: var(--transition);
+}
+
+.form input:focus {
+    outline: none;
+    border-color: var(--primary-light);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+::placeholder {
+    color: var(--text-light);
+}
+
+.btnn {
+    width: 100%;
+    height: 50px;
+    background: var(--primary);
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--white);
+    transition: var(--transition);
+}
+
+.btnn:hover {
+    background: var(--primary-dark);
+}
+
+.btnn a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.form .link {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+    color: var(--text-light);
+}
+
+.form .link a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.form .link a:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    .content .text-section {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    
+    .form {
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+    
+    .menu {
+        margin-top: 20px;
+    }
+    
+    ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    ul li {
+        margin: 10px;
+    }
+    
+    .content {
+        padding-top: 50px;
+    }
+    
+    .content h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 32px;
+    }
+    
+    .form {
+        padding: 30px 20px;
+    }
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Car</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        :root {
+            --primary: #2563eb;
+            --primary-light: #3b82f6;
+            --primary-dark: #1d4ed8;
+            --secondary: #f97316;
+            --text-dark: #1e293b;
+            --text-light: #64748b;
+            --bg-light: #f8fafc;
+            --white: #ffffff;
+            --transition: all 0.3s ease;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --border-radius: 8px;
+        }
+        
+        body {
+            background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url("../images/regs.jpg");
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+        
+        .main {
+            width: 100%;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        
+        #back {
+            background-color: transparent;
+            border: 2px solid var(--secondary);
+            color: var(--white);
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            margin: 20px;
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        #back:hover {
+            background-color: var(--secondary);
+        }
+        
+        #back a {
+            text-decoration: none;
+            color: var(--white);
+            font-weight: 500;
+        }
+        
+        .register {
+            background-color: rgba(255, 255, 255, 0.92);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-md);
+            overflow: hidden;
+            animation: fadeIn 0.8s ease;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        h2 {
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+        
+        form#register {
+            padding: 20px 40px 40px;
+        }
+        
+        label {
+            display: block;
+            font-weight: 500;
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: var(--text-dark);
+        }
+        
+        input[type="text"],
+        input[type="number"],
+        input[type="file"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #e2e8f0;
+            border-radius: var(--border-radius);
+            margin-bottom: 20px;
+            font-size: 15px;
+            background-color: var(--white);
+            color: var(--text-dark);
+            transition: var(--transition);
+        }
+        
+        input[type="text"]:focus,
+        input[type="number"]:focus {
+            outline: none;
+            border-color: var(--primary-light);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+        }
+        
+        .btnn {
+            background-color: var(--primary);
+            color: var(--white);
+            border: none;
+            padding: 14px 24px;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+            transition: var(--transition);
+        }
+        
+        .btnn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <button id="back"><a href="adminvehicle.php">BACK TO HOME</a></button> 
+    
+    <div class="main">
+        <div class="register">
+            <h2>Enter Details Of New Car</h2>
+            <form id="register" action="upload.php" method="POST" enctype="multipart/form-data">    
+                <label>Car Name:</label>
+                <input type="text" name="carname" id="name" placeholder="Enter Car Name" required>
+
+                <label>Fuel Type:</label>
+                <input type="text" name="ftype" id="name" placeholder="Enter Fuel Type" required>
+
+                <label>Capacity:</label>
+                <input type="number" name="capacity" min="1" id="name" placeholder="Enter Capacity Of Car" required>
+                
+                <label>Price:</label>
+                <input type="number" name="price" min="1" id="name" placeholder="Enter Price Of Car for One Day (in rupees)" required>
+
+                <label>Car Image:</label>
+                <input type="file" name="image" required>
+
+                <button type="submit" class="btnn" name="addcar">ADD CAR</button>
+            </form>
+        </div> 
+    </div>
+</body>
+</html>
